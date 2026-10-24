@@ -1,12 +1,16 @@
-# Barcelona defensive third build up analysis
+# Team defensive third build up analysis
 
 Open `eventing-buildup.html` in a browser. The file contains the PSG–Barcelona match from 20 October 2026 and a compact historical sample calculated from the supplied La Liga ZIP. It does not need a server or tracking data.
 
-Scroll below the possession pitch to **Barcelona build-up profile**. Choose all starts, goal kicks only, or other starts excluding restarts. Use the example buttons to inspect successful and unsuccessful possessions. These buttons clear event filters so the selected possession is visible.
+Click **Build-up analysis only** to open the focused analysis view. The match selector and match ZIP upload remain available in this mode. Select either team, then choose all starts, goal kicks only, or other starts excluding restarts. **Full possession viewer** restores the original layout.
 
-**Download build-up PDF** exports the profile alone. **Playbook pdf** includes the profile immediately after the cover for any selected Barcelona match. Ordinary possession pages retain the existing event-filter behavior. The build-up profile always covers the whole selected match within the chosen start category; it is not filtered by the possession viewer's event checkboxes. Referenced example IDs might therefore not appear in a filtered Playbook.
+Click a current-match outcome count or an exit route to list its underlying build-ups in **Possessions behind these results**. **Show all build-ups** lists every qualifying sequence in the selected team and start category. Each button identifies the possession number, time, start type, route and outcome. Selecting a possession opens the full pitch viewer and clears event filters so the evidence is visible. Return using **Build-up analysis only**.
 
-The existing match ZIP picker can load other fixtures. **Import Barcelona history ZIP** replaces the historical comparison sample. It scans HTML/HTM/TXT pages, keeps Barcelona fixtures, deduplicates by date and home/away team IDs, and skips invalid or undated fixtures. Only match dates strictly earlier than the selected fixture contribute to the baseline; same-day fixtures are excluded. Reimport after changing analysis definitions if rebuilding the compact historical file.
+The **Historical sample** section lists contributing fixtures, dates, counts and the source. Each selected team uses only its own earlier fixtures. The bundled sample covers Barcelona only; another team's baseline remains unavailable until appropriate history is imported. Rates with fewer than 20 build-ups are labelled as small samples. This is a transparent display rule, not a statistical-significance threshold.
+
+**Export build-up report only** exports one page for the selected team without generating the Playbook. **Playbook pdf** still includes that selected team's profile immediately after the cover. Ordinary possession pages retain the existing event-filter behavior. The build-up profile always covers the whole selected match within the chosen start category; it is not filtered by the possession viewer's event checkboxes. Referenced example IDs might therefore not appear in a filtered Playbook. The PDF uses short coaching notes; exact coordinate rules are available in the application's collapsed **Calculation notes** section and the definitions below.
+
+The existing match ZIP picker can load other fixtures. **Import team history ZIP** replaces the historical comparison sample. It scans HTML/HTM/TXT pages, analyses both teams in each fixture, deduplicates by date and home/away team IDs, and skips invalid or undated fixtures. Only match dates strictly earlier than the selected fixture contribute to that team's baseline; same-day fixtures are excluded. Reimport after changing analysis definitions if rebuilding the compact historical file. The supplied La Liga ZIP parses as 88 matches and 20 teams; it supplies no PSG baseline.
 
 ## Definitions
 
